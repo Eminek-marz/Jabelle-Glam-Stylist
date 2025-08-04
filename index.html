@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jabelle Glam Stylist</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: url('Jabelle stylist.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            backdrop-filter: brightness(0.7) blur(1px);
+        }
+        .overlay {
+            background: rgba(34, 24, 44, 0.7);
+            min-height: 100vh;
+            width: 100vw;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+        .container {
+            position: relative;
+            z-index: 2;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 60px 30px 30px 30px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5em;
+            color: #e0b3ff;
+            letter-spacing: 2px;
+        }
+        h2 {
+            color: #ffb3d1;
+            margin-bottom: 1em;
+        }
+        .services {
+            margin: 2em 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5em;
+        }
+        .service {
+            background: rgba(255,255,255,0.08);
+            border-radius: 12px;
+            padding: 1em 2em;
+            min-width: 120px;
+            font-weight: bold;
+            color: #ffe6fa;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .contact {
+            margin-top: 2em;
+            font-size: 1.1em;
+            color: #ffe6fa;
+        }
+        .contact a {
+            color: #e0b3ff;
+            text-decoration: none;
+        }
+        .book-btn {
+            margin-top: 2em;
+            background: #e0b3ff;
+            color: #22182c;
+            border: none;
+            border-radius: 8px;
+            padding: 0.8em 2em;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .book-btn:hover {
+            background: #ffb3d1;
+            color: #22182c;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 10px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            .services {
+                flex-direction: column;
+                gap: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="container">
+        <h1>Jabelle Glam Stylist</h1>
+        <h2>Beauty. Style. Confidence.</h2>
+        <div class="services">
+            <div class="service">Hair Styling</div>
+            <div class="service">Nails</div>
+            <div class="service">Fashion Thrift</div>
+            <div class="service">Perfumes</div>
+        </div>
+        <button class="book-btn" onclick="window.location.href='mailto:michelle.karanja24@gmail.com?subject=Appointment%20Booking%20-%20Jabelle%20Glam%20Stylist'">Book Appointment</button>
+        <div class="contact">
+            <p>Contact us:</p>
+            <p>Phone: <a href="tel:+254740428333">+254 740 428333</a></p>
+            <p>Email: <a href="mailto:michelle.karanja24@gmail.com">michelle.karanja24@gmail.com</a></p>
+        </div>
+    </div>
+</body>
+</html> 
